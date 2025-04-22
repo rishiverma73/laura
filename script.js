@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.querySelector('.slider-next');
     let currentSlide = 0;
     
+    
     function showSlide(n) {
         testimonialSlides.forEach(slide => slide.classList.remove('active'));
         dots.forEach(dot => dot.classList.remove('active'));
