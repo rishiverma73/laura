@@ -157,13 +157,31 @@ img {
     height: 80px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Take full height of header */
+}
+
 .logo a {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logo and text */
     font-size: 24px;
     font-weight: 700;
     color: var(--light-text);
     text-transform: uppercase;
     letter-spacing: 2px;
+    height: 100%; /* Take full height of logo container */
 }
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    transition: var(--transition);
+    display: block; /* Ensures proper alignment */
+}
+
 
 .logo a span {
     color: var(--secondary-color);
