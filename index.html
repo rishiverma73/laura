@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreativeDesign | Professional Graphic Design Services</title>
+    <title>Vermastudio | Professional Graphic Design Services</title>
     <meta name="description" content="Professional graphic design services including logo design, branding, posters, and more. We create stunning visual identities for businesses.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/hero-bg.jpg" alt="Graphic Design Work">
+                <img src="images/Untitl.png" alt="Graphic Design Work">
             </div>
         </div>
     </section>
@@ -121,7 +121,7 @@
             </div>
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="logo">Logos</button>
+                <button class="filter-btn" data-filter="logo">Logo</button>
                 <button class="filter-btn" data-filter="branding">Branding</button>
                 <button class="filter-btn" data-filter="print">Print</button>
                 <button class="filter-btn" data-filter="illustration">Illustrations</button>
@@ -190,7 +190,7 @@
                     <div class="section-title">
                         <h2>About <span>Us</span></h2>
                     </div>
-                    <p>CreativeDesign is a boutique graphic design studio dedicated to creating visually stunning and effective designs that help businesses stand out in competitive markets.</p>
+                    <p>Verma Studio is a boutique graphic design studio dedicated to creating visually stunning and effective designs that help businesses stand out in competitive markets.</p>
                     <p>Founded in 2015, we've worked with over 200 clients across various industries, delivering designs that not only look great but also communicate brand values effectively.</p>
                     <p>Our team of passionate designers combines creativity with strategic thinking to deliver designs that make an impact.</p>
                     <div class="about-stats">
@@ -287,7 +287,7 @@
                         <div class="quote-icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
-                        <p>"Working with CreativeDesign was an absolute pleasure. They took our vague ideas and turned them into a stunning visual identity that perfectly represents our brand. The attention to detail and creative approach exceeded our expectations."</p>
+                        <p>"Working with Verma Studio was an absolute pleasure. They took our vague ideas and turned them into a stunning visual identity that perfectly represents our brand. The attention to detail and creative approach exceeded our expectations."</p>
                         <div class="client-info">
                             <img src="images/client1.jpg" alt="Sarah Johnson">
                             <div>
@@ -302,7 +302,7 @@
                         <div class="quote-icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
-                        <p>"The branding package we received was comprehensive and professional. CreativeDesign understood our vision immediately and delivered designs that resonated with our target audience. Our sales increased by 30% after rebranding!"</p>
+                        <p>"The branding package we received was comprehensive and professional. Verma Studio understood our vision immediately and delivered designs that resonated with our target audience. Our sales increased by 30% after rebranding!"</p>
                         <div class="client-info">
                             <img src="images/client2.jpg" alt="Michael Chen">
                             <div>
@@ -317,7 +317,7 @@
                         <div class="quote-icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
-                        <p>"As a small business, we needed impactful designs on a budget. CreativeDesign worked with us to create beautiful marketing materials that look premium but were affordable. Their responsiveness and professionalism were impressive."</p>
+                        <p>"As a small business, we needed impactful designs on a budget. Verma Studio worked with us to create beautiful marketing materials that look premium but were affordable. Their responsiveness and professionalism were impressive."</p>
                         <div class="client-info">
                             <img src="images/client3.jpg" alt="Emma Rodriguez">
                             <div>
@@ -355,7 +355,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Location</h3>
-                            <p>123 Design Street, Creative City, CD 10001</p>
+                            <p>Rohini West, Sector 7, New Delhi 110085</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
@@ -364,7 +364,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Email</h3>
-                            <p>info@creativedesign.com</p>
+                            <p>contactvermastudio@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
@@ -373,7 +373,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
+                            <p>+91 7323014969</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
@@ -382,8 +382,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Working Hours</h3>
-                            <p>Monday - Friday: 9am - 6pm</p>
-                            <p>Saturday: 10am - 2pm</p>
+                            <p>Monday - Saturday: 9am - 6pm</p>
                         </div>
                     </div>
                     <div class="social-links">
@@ -400,17 +399,36 @@
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                            <input type="text" id="phone" name="phone" placeholder="Your Phone (optional)">
                         </div>
                         <div class="form-group">
                             <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
+                        <button type="button" onclick="sendToWhatsApp()" class="btn-primary">Send via WhatsApp</button>
                     </form>
                 </div>
+                
+                <script>
+                function sendToWhatsApp() {
+                    const name = document.getElementById('name').value;
+                    const phone = document.getElementById('phone').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Replace with your WhatsApp number in international format (remove +, spaces, etc.)
+                    const whatsappNumber = '+919779304969'; // Example: 911234567890
+                    
+                    // Construct the WhatsApp URL
+                    let url = `https://wa.me/${+919779304969}?text=`;
+                    
+                    // Add the message content
+                    url += `Hello! My name is ${encodeURIComponent(name)}. `;
+                    if (phone) url += `My phone number is ${encodeURIComponent(phone)}. `;
+                    url += `Message: ${encodeURIComponent(message)}`;
+                    
+                    // Open WhatsApp in a new tab
+                    window.open(url, '_blank');
+                }
+                </script>
             </div>
         </div>
     </section>
@@ -457,7 +475,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 CreativeDesign. All Rights Reserved.</p>
+                <p>&copy; 2023 Verma Studio. All Rights Reserved.</p>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>

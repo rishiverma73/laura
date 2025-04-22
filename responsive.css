@@ -11,7 +11,7 @@
     }
 
     .hero {
-        min-height: auto;
+        min-height:992px;
         padding: 100px 0 60px;
     }
 
