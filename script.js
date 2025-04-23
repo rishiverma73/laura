@@ -1,3 +1,13 @@
+/**
+ * SEO Keywords:
+ * Professional logo design services, Custom branding agency, Minimalist logo design, 
+ * Brand identity design, Logo and packaging design studio, Affordable logo design for startups, 
+ * UI/UX design studio, vermastudio, Verma Studio, Verma studio, verma studio, Responsive web design services, E-commerce website development, 
+ * Custom website design agency, WordPress web design experts, Portfolio website designers, 
+ * Social media branding services, Instagram branding for businesses, Content strategy for brands, 
+ * Digital marketing for startups, Visual storytelling agency, Best branding studio in Delhi, 
+ * Top web designers near me
+ */
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
