@@ -283,7 +283,7 @@ img {
 
 .hero-image img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     animation: float 3s ease-in-out infinite;
 }
