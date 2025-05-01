@@ -63,7 +63,7 @@
 
                     <li><a href="#pricing">Pricing</a></li>
 
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">contact</a></li>
 
                 </ul>
 
@@ -911,11 +911,11 @@
                     let url = `https://wa.me/${whatsappNumber}?text=`;
                     
                     // Add the message content
-                    url += `Hello!%0A%0A`; // Double line break
-                    url += `*Name:* ${encodeURIComponent(name)}%0A`;
-                    url += `*Phone:* ${encodeURIComponent(phone)}%0A`;
-                    url += `*Service Needed:* ${encodeURIComponent(service)}%0A%0A`;
-                    url += `*Message:*%0A${encodeURIComponent(message)}`;
+                    url += `📌 *New Design Inquiry* 📌%0A%0A`;  // Header with emoji
+                    url += `👤 *Name:* ${encodeURIComponent(name)}%0A`;
+                    url += `📱 *Phone:* ${encodeURIComponent(phone)}%0A`;
+                    url += `🎨 *Service Needed:* ${encodeURIComponent(service)}%0A%0A`;
+                    url += `💬 *Project Details:*%0A${encodeURIComponent(message)}%0A%0A`;
                     
                     // Open WhatsApp in a new tab
                     window.open(url, '_blank');
