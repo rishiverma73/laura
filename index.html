@@ -756,7 +756,7 @@
 
                             <h3>Location</h3>
 
-                            <p>Rohini West, Sector 7, New Delhi 110085</p>
+                            <p>Rohini West, Sector 3, New Delhi 110085</p>
 
                         </div>
 
@@ -817,91 +817,75 @@
                     </div>
 
                     <div class="social-links">
-
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-
-                        <a href="https://www.instagram.com/vermastudio.live?igsh=MXBjc2g3azBlbDhtNw=="><i class="fab fa-instagram"></i></a>
-
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-                        <a href="https://www.behance.net/gallery/221042891/Protfolio"><i class="fab fa-behance"></i></a>
-
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vermastudio.live?igsh=MXBjc2g3azBlbDhtNw==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/gallery/221042891/Protfolio" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
                     </div>
 
                 </div>
 
                 <div class="contact-form">
-
                     <form id="contactForm">
-
                         <div class="form-group">
-
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-
+                            <input type="text" id="name" name="name" placeholder="Your Name*" required>
                         </div>
-
+                        
                         <div class="form-group">
-
-                            <input type="text" id="phone" name="phone" placeholder="Your Phone (optional)">
-
+                            <input type="text" id="phone" name="phone" placeholder="Your Phone*" required>
                         </div>
-
+                        
                         <div class="form-group">
-
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a Service*</option>
+                                <option value="Logo Design">Logo Design</option>
+                                <option value="Brand Identity">Brand Identity</option>
+                                <option value="Print Design">Print Design</option>
+                                <option value="Social Media Design">Social Media Design</option>
+                                <option value="Web & App Design">Web & App Design</option>
+                                <option value="Other">Other</option>
+                            </select>
                         </div>
-
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message*" required></textarea>
+                        </div>
+                        
                         <button type="button" onclick="sendToWhatsApp()" class="btn-primary">Send via WhatsApp</button>
-
                     </form>
-
                 </div>
-
-               
-
+                
                 <script>
-
                 function sendToWhatsApp() {
-
+                    // Get form values
                     const name = document.getElementById('name').value;
-
                     const phone = document.getElementById('phone').value;
-
+                    const service = document.getElementById('service').value;
                     const message = document.getElementById('message').value;
-
-                   
-
-                    // Replace with your WhatsApp number in international format (remove +, spaces, etc.)
-
-                    const whatsappNumber = '+919779304969'; // Example: 911234567890
-
-                   
-
+                    
+                    // Validate all required fields
+                    if (!name || !phone || !service || !message) {
+                        alert('Please fill in all required fields marked with *');
+                        return;
+                    }
+                    
+                    // Replace with your WhatsApp number in international format
+                    const whatsappNumber = '919779304969'; // No + sign needed here
+                    
                     // Construct the WhatsApp URL
-
-                    let url = `https://wa.me/${+919779304969}?text=`;
-
-                   
-
+                    let url = `https://wa.me/${whatsappNumber}?text=`;
+                    
                     // Add the message content
-
-                    url += `Hello! My name is ${encodeURIComponent(name)}. `;
-
-                    if (phone) url += `My phone number is ${encodeURIComponent(phone)}. `;
-
-                    url += `Message: ${encodeURIComponent(message)}`;
-
-                   
-
+                    url += `Hello!%0A%0A`; // Double line break
+                    url += `*Name:* ${encodeURIComponent(name)}%0A`;
+                    url += `*Phone:* ${encodeURIComponent(phone)}%0A`;
+                    url += `*Service Needed:* ${encodeURIComponent(service)}%0A%0A`;
+                    url += `*Message:*%0A${encodeURIComponent(message)}`;
+                    
                     // Open WhatsApp in a new tab
-
                     window.open(url, '_blank');
-
                 }
-
                 </script>
 
             </div>
@@ -926,9 +910,7 @@
 
                         <a href="#home">Verma<span>Studio</span></a>
 
-                    </div>
-
-                    <p>We create memorable visual identities that help businesses stand out and connect with their audience.</p>
+                    </div> 
 
                
 
