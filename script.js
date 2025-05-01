@@ -85,6 +85,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+
+    
     // Testimonial Slider
     const testimonialSlides = document.querySelectorAll('.testimonial-slide');
     const dots = document.querySelectorAll('.dot');
