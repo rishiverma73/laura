@@ -140,7 +140,7 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.377);
+    background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
     transition: var(--transition);
 }
@@ -154,7 +154,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 80px;
 }
 
 .logo {
@@ -166,7 +166,7 @@ img {
 .logo a {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between logo and text */
+    gap: 15px; /* Space between logo and text */
     font-size: 24px;
     font-weight: 700;
     color: var(--light-text);
